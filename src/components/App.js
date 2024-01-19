@@ -1,6 +1,15 @@
+import { Navigation } from './navigation/Navigation';
+
+import css from './App.module.css';
+
 export const App = () => {
   return (
-    <div
+    <div className={css['app-null']}>
+      <header>
+        <Navigation />
+      </header>
+
+      <div 
       style={{
         height: '100vh',
         display: 'flex',
@@ -11,6 +20,9 @@ export const App = () => {
       }}
     >
       React homework template !!!
+      </div>
+      
     </div>
+    
   );
 };
