@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-cargo-delivery/static/css/main.7312819e.css",
+    "main.js": "/react-cargo-delivery/static/js/main.fccaf34e.js",
+    "index.html": "/react-cargo-delivery/index.html",
+    "main.7312819e.css.map": "/react-cargo-delivery/static/css/main.7312819e.css.map",
+    "main.fccaf34e.js.map": "/react-cargo-delivery/static/js/main.fccaf34e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7312819e.css",
+    "static/js/main.fccaf34e.js"
+  ]
+}
