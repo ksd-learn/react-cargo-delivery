@@ -1,0 +1,10 @@
+/* .number {
+    -moz-appearance: textfield;
+} */
+.number::-webkit-inner-spin-button {
+    display: none;
+}
+
+.step1 {
+    background-color: #b9dcf9;
+}
