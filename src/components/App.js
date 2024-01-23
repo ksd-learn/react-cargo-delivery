@@ -1,7 +1,8 @@
-import { Navigation } from './navigation/Navigation';
-import { Company } from './company/Company';
-import { Services } from './services/Services';
-import { Delivery } from './services/delivery/Delivery';
+import { Routes, Route } from "react-router-dom";
+import { Loyaut } from './Loyaut';
+import { Company } from '../pages/Company';
+import { Services } from '../pages/Services';
+import { Price } from '../pages/Price';
 import { DeliveryRequest } from './forms/deliveryRequest/DeliveryRequest';
 import { DeliveryCalculation } from './forms/deliveryCalculation/DeliveryCalculation';
 import { DeliveryCalculationStep1 } from './forms/deliveryCalculation/deliveryCalculationStep1/DeliveryCalculationStep1';
@@ -10,19 +11,26 @@ import { DeliveryCalculationStep3 } from './forms/deliveryCalculation/deliveryCa
 import { VolumeCalculation } from './forms/volumeCalculation/VolumeCalculation';
 import { Question } from './forms/question/Question';
 import { RegisterCargo } from './registerCargo/RegisterCargo';
-import { FooterCargo } from './footerCargo/FooterCargo';
+
 import css from './App.module.css';
 
 export const App = () => {
   return (
+    
     <div className={css['app-null']}>
-      <header>
-        <Navigation />
-      </header>
-
+      <Routes>
+        <Route path="/" element={<Loyaut />}>
+          <Route index element={<Company />} />
+          <Route path="services" element={<Services />} />
+          <Route path="price" element={<Price />} />
+          <Route path="registerCargo" element={<RegisterCargo />} />
+          <Route path="*" element={<Company />} />
+        </Route>
+        {/*  */}
+      </Routes>
+{/*  
       <main>
         <Company />
-        <Services />
         <Delivery />
         <DeliveryRequest />
         <DeliveryCalculation />
@@ -30,14 +38,9 @@ export const App = () => {
         <DeliveryCalculationStep2 />
         <DeliveryCalculationStep3 />
         <VolumeCalculation />
-        <RegisterCargo />
         <Question />
       </main>
-
-      <footer>
-        <FooterCargo />
-      </footer>
-      
+       */}
     </div>
   );
 };

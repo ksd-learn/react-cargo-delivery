@@ -12,7 +12,7 @@ export const listAdvantages =
         },
         {
             id: 'id-3',
-            text: 'Проверка товарана брак',
+            text: 'Проверка товара на брак',
             image: 'icon-magnifying-glass-1'
         },
         {

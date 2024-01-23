@@ -1,4 +1,4 @@
-import { listDelivery } from '../../../../data/listDelivery';
+import { listDelivery } from '../../data/listDelivery';
 import css from './DeliveryItem.module.css';
 
 export const DeliveryItem = () => {

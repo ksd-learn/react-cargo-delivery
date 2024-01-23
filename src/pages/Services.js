@@ -1,4 +1,4 @@
-import { ServiceItem } from './serviceItem/ServiceItem';
+import { ServiceItem } from '../components/serviceItem/ServiceItem';
 import css from './Services.module.css';
 
 export const Services = () => {

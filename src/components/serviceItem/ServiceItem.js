@@ -1,4 +1,4 @@
-import { listServices } from '../../../data/listServices';
+import { listServices } from '../../data/listServices';
 import css from './ServiceItem.module.css';
 
 export const ServiceItem = () => {

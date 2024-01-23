@@ -1,5 +1,5 @@
-import { AdvantageItem } from './advantageItem/AdvantageItem';
-import { QuestionItem } from './questionItem/QuestionItem';
+import { AdvantageItem } from '../components/company/advantageItem/AdvantageItem';
+import { QuestionItem } from '../components/company/questionItem/QuestionItem';
 import css from './Company.module.css';
 
 export const Company = () => {
