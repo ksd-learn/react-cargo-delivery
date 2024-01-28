@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-cargo-delivery/static/css/main.d0e75504.css",
-    "main.js": "/react-cargo-delivery/static/js/main.53a8056e.js",
+    "main.css": "/react-cargo-delivery/static/css/main.92fb4871.css",
+    "main.js": "/react-cargo-delivery/static/js/main.116346ab.js",
     "index.html": "/react-cargo-delivery/index.html",
-    "main.d0e75504.css.map": "/react-cargo-delivery/static/css/main.d0e75504.css.map",
-    "main.53a8056e.js.map": "/react-cargo-delivery/static/js/main.53a8056e.js.map"
+    "main.92fb4871.css.map": "/react-cargo-delivery/static/css/main.92fb4871.css.map",
+    "main.116346ab.js.map": "/react-cargo-delivery/static/js/main.116346ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0e75504.css",
-    "static/js/main.53a8056e.js"
+    "static/css/main.92fb4871.css",
+    "static/js/main.116346ab.js"
   ]
 }
