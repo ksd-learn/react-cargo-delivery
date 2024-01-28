@@ -3,6 +3,7 @@ import { Loyaut } from './Loyaut';
 import { Company } from '../pages/Company';
 import { Services } from '../pages/Services';
 import { Price } from '../pages/Price';
+import { Contacts } from '../pages/Contacts';
 //import { DeliveryRequest } from './forms/deliveryRequest/DeliveryRequest';
 //import { DeliveryCalculation } from './forms/deliveryCalculation/DeliveryCalculation';
 //import { DeliveryCalculationStep1 } from './forms/deliveryCalculation/deliveryCalculationStep1/DeliveryCalculationStep1';
@@ -23,6 +24,7 @@ export const App = () => {
           <Route index element={<Company />} />
           <Route path="services" element={<Services />} />
           <Route path="price" element={<Price />} />
+          <Route path="contacts" element={<Contacts />} />
           <Route path="registerCargo" element={<RegisterCargo />} />
           <Route path="*" element={<Company />} />
         </Route>

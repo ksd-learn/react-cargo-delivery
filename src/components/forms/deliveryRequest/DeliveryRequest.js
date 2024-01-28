@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import css from './DeliveryRequest.module.css';
 
-export const DeliveryRequest = () => {
+export const DeliveryRequest = ({ onClose, nameDelivery }) => {
 
     const [name, setName] = useState('');
     const [telefon, setTelefon] = useState('');
     const [email, setEmail] = useState('');
-    const [service, setService] = useState('');
+    //const [service, setService] = useState('');
 
     const handleChange = ({ target: { name, value } }) => {
         switch (name) {
@@ -19,9 +19,9 @@ export const DeliveryRequest = () => {
             case 'email':
                 setEmail(value);
                 break;
-            case 'service':
-                setService(value);
-                break
+            //case 'service':
+            //    setService(value);
+            //    break
             default:
         }
     };
@@ -31,8 +31,20 @@ export const DeliveryRequest = () => {
         setName("");
         setTelefon("");
         setEmail("");
-        setService("");
+        //setService("");
     };
+
+    useEffect(() => {
+                            // Добавление обработчика событий для закрытия при клике вне модального окна
+        const handleClickOutside = (event) => {
+            onClose()
+        };
+        document.addEventListener('click', handleClickOutside);
+                            // Убираем обработчики событий при размонтировании компонента
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [onClose]);
 
     return (
         <div className={css.request}>
@@ -74,7 +86,7 @@ export const DeliveryRequest = () => {
                 <label className={css.label}>
                     <p>Вариант доставки груза:</p>
                     <input
-                        name="service" type="text" value={service} onChange={handleChange}
+                        name="service" type="text" value={nameDelivery} onChange={handleChange}
                         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                         placeholder="Вариант доставки"
                         title="Вариант доставки груза из Китая"

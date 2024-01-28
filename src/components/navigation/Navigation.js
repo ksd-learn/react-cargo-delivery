@@ -12,7 +12,7 @@ export const Navigation = () => {
                 <NavLink to="/">О компании</NavLink>
                 <NavLink to="services">Услуги</NavLink>
                 <NavLink to="price">Цены и сроки</NavLink>
-                <NavLink to="services">Контакты</NavLink>
+                <NavLink to="contacts">Контакты</NavLink>
                 <NavLink to="registerCargo">Оформить груз</NavLink>
             </nav>
         </div>
