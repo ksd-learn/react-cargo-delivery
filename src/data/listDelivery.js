@@ -1,7 +1,7 @@
 export const listDelivery =
     [
         {
-            id: 'id-1',
+            id: 'deliv-1',
             name: 'Авто - обычная',
             time: '9-15 дней',
             weight: 'от 5 кг',
@@ -9,7 +9,7 @@ export const listDelivery =
             image: 'avto1.png'
         },
         {
-            id: 'id-2',
+            id: 'deliv-2',
             name: 'Авто - ускоренная',
                         time: '9-15 дней',
             weight: 'от 5 кг',
@@ -17,7 +17,7 @@ export const listDelivery =
             image: 'avto2.png'
         },
         {
-            id: 'id-3',
+            id: 'deliv-3',
             name: 'Авиа',
             time: '9-15 дней',
             weight: 'от 5 кг',
@@ -25,7 +25,7 @@ export const listDelivery =
             image: 'avia.png'
         },
         {
-            id: 'id-4',
+            id: 'deliv-4',
             name: 'Ж/д',
             time: '9-15 дней',
             weight: 'от 5 кг',
@@ -33,7 +33,7 @@ export const listDelivery =
             image: 'railway.png'
         },
         {
-            id: 'id-5',
+            id: 'deliv-5',
             name: 'Море',
             time: '9-15 дней',
             weight: 'от 5 кг',

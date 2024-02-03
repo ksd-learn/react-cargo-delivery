@@ -4,7 +4,8 @@ import { Company } from '../pages/Company';
 import { Services } from '../pages/Services';
 import { Price } from '../pages/Price';
 import { Contacts } from '../pages/Contacts';
-//import { DeliveryRequest } from './forms/deliveryRequest/DeliveryRequest';
+import { DeliveryItem } from './price/priceDeliveryItem/DeliveryItem';
+import { ServiiceDelivery } from '../pages/ServiiceDelivery';
 //import { DeliveryCalculation } from './forms/deliveryCalculation/DeliveryCalculation';
 //import { DeliveryCalculationStep1 } from './forms/deliveryCalculation/deliveryCalculationStep1/DeliveryCalculationStep1';
 //import { DeliveryCalculationStep2 } from './forms/deliveryCalculation/deliveryCalculationStep2/DeliveryCalculationStep2';
@@ -23,7 +24,10 @@ export const App = () => {
         <Route path="/" element={<Loyaut />}>
           <Route index element={<Company />} />
           <Route path="services" element={<Services />} />
-          <Route path="price" element={<Price />} />
+          <Route path="service-delivery" element={<ServiiceDelivery />} />
+          <Route path="price" element={<Price />}>
+            <Route path="delivery" element={<DeliveryItem />} />
+          </ Route>
           <Route path="contacts" element={<Contacts />} />
           <Route path="registerCargo" element={<RegisterCargo />} />
           <Route path="*" element={<Company />} />
